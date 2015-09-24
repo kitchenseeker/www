@@ -1,6 +1,6 @@
-cat <<EOF > stats.html
+cat <<EOF > /var/www/stats.html
 <h1><font color="blue">Node Stats.html</font></h2>
-<h2>Realtime Statics for node: <font color="red"> $(hostname -f):80 </font></h2>
+<h2>Realtime Statistics for node: <font color="red"> $(hostname -f):80 </font></h2>
 
 
 <ul>
@@ -10,7 +10,7 @@ cat <<EOF > stats.html
         <li><b>Uptime:</b>  $(uptime) </li>
 </ul>
 
-<h3> list of live connections </h3>
+<h3> List of live connections </h3>
 <code><pre>
 $(netstat -an | grep :80)
 </pre></code>
