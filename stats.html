@@ -4,94 +4,94 @@
 
 <ul>
         <li><b>Uname:</b> Linux devnode-1 3.16.0-0.bpo.4-amd64 #1 SMP Debian 3.16.7-ckt11-1~bpo70+1 (2015-06-08) x86_64 GNU/Linux </li>
-        <li><b>CPU:</b>  0.248467% </li>
-        <li><b>Memory(MB):</b>  used:442 free:151 </li>
-        <li><b>Uptime:</b>   03:00:01 up 43 days, 14:07,  0 users,  load average: 0.00, 0.01, 0.05 </li>
+        <li><b>CPU:</b>  0.248454% </li>
+        <li><b>Memory(MB):</b>  used:438 free:155 </li>
+        <li><b>Uptime:</b>   04:00:01 up 43 days, 15:07,  0 users,  load average: 0.00, 0.03, 0.05 </li>
 </ul>
 
 <h3> List of live connections </h3>
 <code><pre>
 tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN     
 tcp        0      0 10.240.154.171:58400    169.254.169.254:80      ESTABLISHED
+tcp        0      0 10.240.154.171:49333    169.254.169.254:80      ESTABLISHED
+tcp        0      0 10.240.154.171:49337    169.254.169.254:80      ESTABLISHED
 tcp        1      0 10.240.154.171:34641    169.254.169.254:80      CLOSE_WAIT 
-tcp        0      0 10.240.154.171:49012    169.254.169.254:80      ESTABLISHED
-tcp        0      0 10.240.154.171:49011    169.254.169.254:80      ESTABLISHED
 tcp        0      0 10.240.154.171:34635    169.254.169.254:80      CLOSE_WAIT 
-tcp        0      0 10.240.154.171:49010    169.254.169.254:80      TIME_WAIT  
+tcp        0      0 10.240.154.171:49336    169.254.169.254:80      TIME_WAIT  
 </pre></code>
 <h3> Traffic Statistics </h3>
 <pre>
 Ip:
-    3958730 total packets received
+    3961111 total packets received
     2 with invalid addresses
     0 forwarded
     0 incoming packets discarded
-    3958725 incoming packets delivered
-    4233255 requests sent out
+    3961106 incoming packets delivered
+    4236105 requests sent out
     2 fragments received ok
     4 fragments created
 Icmp:
-    14414 ICMP messages received
-    2229 input ICMP message failed.
+    14479 ICMP messages received
+    2230 input ICMP message failed.
     ICMP input histogram:
-        destination unreachable: 2522
+        destination unreachable: 2525
         timeout in transit: 200
         source quenches: 2
         redirects: 3
-        echo requests: 1800
-        echo replies: 9885
+        echo requests: 1802
+        echo replies: 9945
         timestamp request: 2
-    12106 ICMP messages sent
+    12170 ICMP messages sent
     0 ICMP messages failed
     ICMP output histogram:
-        destination unreachable: 420
-        echo request: 9884
-        echo replies: 1800
+        destination unreachable: 422
+        echo request: 9944
+        echo replies: 1802
         timestamp replies: 2
 IcmpMsg:
-        InType0: 9885
-        InType3: 2522
+        InType0: 9945
+        InType3: 2525
         InType4: 2
         InType5: 3
-        InType8: 1800
+        InType8: 1802
         InType11: 200
         InType13: 2
-        OutType0: 1800
-        OutType3: 420
-        OutType8: 9884
+        OutType0: 1802
+        OutType3: 422
+        OutType8: 9944
         OutType14: 2
 Tcp:
-    320775 active connections openings
-    114543 passive connection openings
-    10560 failed connection attempts
-    133907 connection resets received
+    321102 active connections openings
+    114547 passive connection openings
+    10581 failed connection attempts
+    133965 connection resets received
     3 connections established
-    3147177 segments received
-    3616813 segments send out
-    72438 segments retransmited
+    3148876 segments received
+    3619027 segments send out
+    72534 segments retransmited
     0 bad segments received.
-    85582 resets sent
+    85653 resets sent
 Udp:
-    796712 packets received
-    420 packets to unknown port received.
+    797327 packets received
+    422 packets to unknown port received.
     0 packet receive errors
-    797140 packets sent
+    797757 packets sent
 UdpLite:
 TcpExt:
     68 invalid SYN cookies received
-    6988 resets received for embryonic SYN_RECV sockets
-    77189 TCP sockets finished time wait in fast timer
+    6992 resets received for embryonic SYN_RECV sockets
+    77265 TCP sockets finished time wait in fast timer
     35 packets rejects in established connections because of timestamp
-    211416 delayed acks sent
+    211426 delayed acks sent
     4 delayed acks further delayed because of locked socket
     Quick ack mode was activated 1767 times
     21 SYNs to LISTEN sockets dropped
-    96984 packets directly queued to recvmsg prequeue.
-    16221 bytes directly received in process context from prequeue
-    644563 packet headers predicted
+    96988 packets directly queued to recvmsg prequeue.
+    16239 bytes directly received in process context from prequeue
+    644748 packet headers predicted
     10 packets header predicted and directly queued to user
-    743551 acknowledgments not containing data payload received
-    256468 predicted acknowledgments
+    743982 acknowledgments not containing data payload received
+    256488 predicted acknowledgments
     1 times recovered from packet loss due to fast retransmit
     905 times recovered from packet loss by selective acknowledgements
     Detected reordering 5 times using FACK
@@ -108,7 +108,7 @@ TcpExt:
     2890 fast retransmits
     193 forward retransmits
     252 retransmits in slow start
-    51216 other TCP timeouts
+    51237 other TCP timeouts
     TCPLossProbes: 5602
     TCPLossProbeRecovery: 3217
     1 classic Reno fast retransmits failed
@@ -117,28 +117,28 @@ TcpExt:
     5 DSACKs sent for out of order packets
     1645 DSACKs received
     8 DSACKs for out of order packets received
-    3606 connections reset due to unexpected data
-    60904 connections reset due to early user close
-    3240 connections aborted due to timeout
+    3610 connections reset due to unexpected data
+    60962 connections reset due to early user close
+    3255 connections aborted due to timeout
     TCPDSACKIgnoredNoUndo: 758
     TCPSpuriousRTOs: 39
     TCPSackShifted: 2314
     TCPSackMerged: 4552
     TCPSackShiftFallback: 31800
     TCPDeferAcceptDrop: 8027
-    TCPRcvCoalesce: 98254
-    TCPOFOQueue: 2847
+    TCPRcvCoalesce: 98391
+    TCPOFOQueue: 2848
     TCPOFOMerge: 5
     TCPChallengeACK: 3463
     TCPFromZeroWindowAdv: 34
     TCPToZeroWindowAdv: 34
     TCPWantZeroWindowAdv: 1
-    TCPSynRetrans: 56853
-    TCPOrigDataSent: 1597377
+    TCPSynRetrans: 56944
+    TCPOrigDataSent: 1598228
 IpExt:
-    InOctets: 1099065173
-    OutOctets: 924692703
-    InNoECTPkts: 3957871
+    InOctets: 1099918133
+    OutOctets: 925223189
+    InNoECTPkts: 3960252
     InECT1Pkts: 1
     InECT0Pkts: 568
     InCEPkts: 290
